@@ -1,0 +1,12 @@
+def reverse_words(sentence: str) -> str:
+    sep = " "
+    return_string = sep.join(str)
+    return return_string
+
+
+try:
+	assert reverse_words("Hello World") == "World Hello"
+	assert reverse_words("Python is awesome") == "awesome is Python"
+	print("Test Pass")
+except AssertionError:
+	print("Test Fail")
