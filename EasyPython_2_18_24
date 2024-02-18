@@ -1,8 +1,10 @@
 def reverse_words(sentence: str) -> str:
-    sep = " "
-    return_string = sep.join(str)
-    return return_string
-
+	returned = sentence.split(" ")
+	list word_list = []
+	for words in returned[-1:]:
+		word_list += words
+		
+	return word_list
 
 try:
 	assert reverse_words("Hello World") == "World Hello"
